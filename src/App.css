@@ -1,0 +1,71 @@
+
+
+/* Apply to html and body */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+    background-color: rgba(128, 128, 128, 0.582);
+  overflow-x: hidden; /* Prevent unwanted horizontal scroll */
+}
+
+/* Ensure root and app containers take full height */
+#root, .App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+*{
+    font-size: 0.85rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* list group */
+.list-group-item.active{
+   background-color: #e0f3ff !important; /* Light blue or your desired color */
+  color: #000 !important;
+  border-color: #b6e0fe !important;
+}
+
+.other-components{
+  height: 85vh;
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
